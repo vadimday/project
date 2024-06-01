@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="main-container">
+        <div class="main-main">
+          <div class="main-eightsection">
+            <div class="main-background"></div>
+            <img
+              src="public/external/line12336-r029.svg"
+              alt="Line12336"
+              class="main-line12"
+            />
+            <div class="main-footer">
+              <div class="main-namephotographer">
+                <span class="main-text"><span>Photographer</span></span>
+                <span class="main-text002"><span>Monica Johnson</span></span>
+              </div>
+              <div class="main-footernav">
+                <span class="main-text004"><span>Portfolio</span></span>
+                <span class="main-text006"><span>Prices</span></span>
+                <span class="main-text008"><span>Info</span></span>
+                <span class="main-text010"><span>Contacts</span></span>
+              </div>
+              <div class="main-social">
+                <img
+                  src="public/external/twitter813320-5tgf-200h.png"
+                  alt="twitter813320"
+                  class="main-twitter81"
+                />
+                <img
+                  src="public/external/email113316-2x5-200h.png"
+                  alt="email113316"
+                  class="main-email11"
+                />
+                <img
+                  src="public/external/facebook513319-9s3-200h.png"
+                  alt="facebook513319"
+                  class="main-facebook51"
+                />
+                <img
+                  src="public/external/instagram1313318-1wc-200h.png"
+                  alt="instagram1313318"
+                  class="main-instagram131"
+                />
+              </div>
+              <div class="main-text012">
+                <span class="main-text013">
+                  <span>2023 ©Monica Johnson. All Rights Reserved.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="main-seventhsection">
+            <div class="main-background1"></div>
+            <div class="main-content">
+              <div class="main-image">
+                <img
+                  src="public/external/pexelsluanafreitas1625927012925-r1yv-700w.png"
+                  alt="pexelsluanafreitas1625927012925"
+                  class="main-pexelsluanafreitas162592701"
+                />
+              </div>
+              <div class="main-group3">
+                <div class="main-backgroundform"></div>
+                <div class="main-btn">
+                  <span class="main-text015"><span>Send Message</span></span>
+                  <img
+                    src="public/external/rightarrow1162926-m2kl-200h.png"
+                    alt="rightarrow1162926"
+                    class="main-rightarrow116"
+                  />
+                </div>
+                <div class="main-message">
+                  <span class="main-text017"><span>Message</span></span>
+                  <span class="main-text019"><span>Write</span></span>
+                  <img
+                    src="public/external/line112926-buw.svg"
+                    alt="Line112926"
+                    class="main-line11"
+                  />
+                </div>
+                <div class="main-email">
+                  <img
+                    src="public/external/line102925-u5vt.svg"
+                    alt="Line102925"
+                    class="main-line10"
+                  />
+                  <span class="main-text021"><span>E-mail</span></span>
+                  <span class="main-text023"><span>Enter</span></span>
+                </div>
+                <div class="main-name">
+                  <img
+                    src="public/external/line92925-xibf.svg"
+                    alt="Line92925"
+                    class="main-line9"
+                  />
+                  <span class="main-text025"><span>Name</span></span>
+                  <span class="main-text027"><span>Your</span></span>
+                </div>
+              </div>
+              <div class="main-title">
+                <span class="main-text029">
+                  <span>Submit your application</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="main-sixthsection">
+            <div class="main-background2"></div>
+            <div class="main-content1">
+              <div class="main-title1">
+                <span class="main-text031"><span>Reviews</span></span>
+              </div>
+              <img
+                src="public/external/line82821-bjos.svg"
+                alt="Line82821"
+                class="main-line8"
+              />
+              <div class="main-reviews">
+                <div class="main-firstreview">
+                  <img
+                    src="public/external/couplelookingseabeachduringsunset112822-mby-500h.png"
+                    alt="couplelookingseabeachduringsunset112822"
+                    class="main-couplelookingseabeachduringsunset11"
+                  />
+                  <span class="main-text033"><span>Sara and Brayan</span></span>
+                  <span class="main-text035"><span>Portrait</span></span>
+                </div>
+                <div class="main-selectedreview">
+                  <img
+                    src="public/external/rectangle242821-kwub-500w.png"
+                    alt="Rectangle242821"
+                    class="main-rectangle24"
+                  />
+                  <span class="main-text037"><span>Portrait</span></span>
+                  <span class="main-text039">
+                    <span>Sasha and Veronika</span>
+                  </span>
+                </div>
+                <div class="main-thirdreview">
+                  <img
+                    src="public/external/beautifulportraitteenagerwoman12822-83mc-500h.png"
+                    alt="beautifulportraitteenagerwoman12822"
+                    class="main-beautifulportraitteenagerwoman1"
+                  />
+                  <span class="main-text041"><span>Viktoria</span></span>
+                  <span class="main-text043"><span>Portrait</span></span>
+                </div>
+              </div>
+              <div class="main-slider">
+                <img
+                  src="public/external/rectangle202823-u0k9-200h.png"
+                  alt="Rectangle202823"
+                  class="main-rectangle20"
+                />
+                <img
+                  src="public/external/rectangle212824-07o-200h.png"
+                  alt="Rectangle212824"
+                  class="main-rectangle21"
+                />
+                <div class="main-arrows">
+                  <img
+                    src="public/external/rightarrow1142824-ujbq-200h.png"
+                    alt="rightarrow1142824"
+                    class="main-rightarrow114"
+                  />
+                  <img
+                    src="public/external/rightarrow1152824-6fj7-200h.png"
+                    alt="rightarrow1152824"
+                    class="main-rightarrow115"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-fifthsection">
+            <div class="main-background3"></div>
+            <div class="main-content2">
+              <div class="main-title2">
+                <span class="main-text045"><span>My Prices</span></span>
+              </div>
+              <div class="main-image1">
+                <img
+                  src="public/external/pexelsatahandemir1469671512927-rgv-600w.png"
+                  alt="pexelsatahandemir1469671512927"
+                  class="main-pexelsatahandemir146967151"
+                />
+              </div>
+              <img
+                src="public/external/line62815-j9mo.svg"
+                alt="Line62815"
+                class="main-line6"
+              />
+              <div class="main-typeshooting">
+                <div class="main-portrait">
+                  <div class="main-name1">
+                    <span class="main-text047"><span>Portrait</span></span>
+                    <img
+                      src="public/external/line72818-ptta.svg"
+                      alt="Line72818"
+                      class="main-line7"
+                    />
+                  </div>
+                  <div class="main-text049">
+                    <span class="main-text050">
+                      <span>
+                        This includes individual, family, and group portraits,
+                        as well as headshots for business and corporate
+                        purposes.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="main-price">
+                    <span class="main-text052"><span>220$</span></span>
+                  </div>
+                </div>
+                <div class="main-individual">
+                  <div class="main-name2">
+                    <span class="main-text054"><span>Individual</span></span>
+                    <img
+                      src="public/external/line72819-6mvm.svg"
+                      alt="Line72819"
+                      class="main-line71"
+                    />
+                  </div>
+                  <div class="main-text056">
+                    <span class="main-text057">
+                      <span>
+                        An individual photoshoot offers an opportunity for
+                        someone to have a professional photographer capture
+                        their unique personality and style through a series of
+                        posed and candid shots.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="main-price1">
+                    <span class="main-text059"><span>300$</span></span>
+                  </div>
+                </div>
+                <div class="main-fashion">
+                  <div class="main-name3">
+                    <span class="main-text061"><span>Fashion</span></span>
+                    <img
+                      src="public/external/line72820-si7u.svg"
+                      alt="Line72820"
+                      class="main-line72"
+                    />
+                  </div>
+                  <div class="main-text063">
+                    <span class="main-text064">
+                      <span>
+                        A fashion photoshoot is a creative process in which a
+                        team of professionals collaborates to produce images
+                        that showcase clothing, accessories, or a particular
+                        style.
+                      </span>
+                    </span>
+                  </div>
+                  <div class="main-price2">
+                    <span class="main-text066"><span>350$</span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="main-btn1">
+                <span class="main-text068"><span>Order Shooting</span></span>
+                <img
+                  src="public/external/rightarrow1162820-1pm-200w.png"
+                  alt="rightarrow1162820"
+                  class="main-rightarrow1161"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="main-fourthsection">
+            <div class="main-background4"></div>
+            <div class="main-content3">
+              <div class="main-title3">
+                <span class="main-text070"><span>My Latest Work’s</span></span>
+              </div>
+              <div class="main-image2">
+                <img
+                  src="public/external/rectangle152612-tg2r-400h.png"
+                  alt="Rectangle152612"
+                  class="main-rectangle15"
+                />
+                <img
+                  src="public/external/rectangle162613-okag-400h.png"
+                  alt="Rectangle162613"
+                  class="main-rectangle16"
+                />
+                <img
+                  src="public/external/rectangle172613-864u6-400h.png"
+                  alt="Rectangle172613"
+                  class="main-rectangle17"
+                />
+                <img
+                  src="public/external/rectangle182613-0yfk-400h.png"
+                  alt="Rectangle182613"
+                  class="main-rectangle18"
+                />
+              </div>
+              <div class="main-btn2">
+                <img
+                  src="public/external/rightarrow1132613-dhw-200h.png"
+                  alt="rightarrow1132613"
+                  class="main-rightarrow113"
+                />
+                <span class="main-text072"><span>See More Work’s</span></span>
+              </div>
+              <div class="main-text074">
+                <span class="main-text075">
+                  <span>
+                    Photography has always been considered a form of magic, as
+                    it captures moments of the past, present and future,
+                    preserving them for eternity. It has the ability to capture
+                    emotions, memories, and expressions of people, places, and
+                    things in a way that surpasses other art forms, creating a
+                    world of beauty, wonder, and discovery.
+                  </span>
+                </span>
+              </div>
+              <img
+                src="public/external/line42613-kys.svg"
+                alt="Line42613"
+                class="main-line4"
+              />
+              <div class="main-slider1">
+                <img
+                  src="public/external/rectangle202614-efzs-200h.png"
+                  alt="Rectangle202614"
+                  class="main-rectangle201"
+                />
+                <img
+                  src="public/external/rectangle212614-4s4h-200h.png"
+                  alt="Rectangle212614"
+                  class="main-rectangle211"
+                />
+                <div class="main-arrows1">
+                  <img
+                    src="public/external/rightarrow1142614-3hi-200h.png"
+                    alt="rightarrow1142614"
+                    class="main-rightarrow1141"
+                  />
+                  <img
+                    src="public/external/rightarrow1152614-hwxy-200h.png"
+                    alt="rightarrow1152614"
+                    class="main-rightarrow1151"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-thirdsection">
+            <div class="main-background5"></div>
+            <div class="main-content4">
+              <div class="main-photography">
+                <div class="main-title4">
+                  <span class="main-text077"><span>Portfolio</span></span>
+                </div>
+                <img
+                  src="public/external/rectangle132383-1d8a-600h.png"
+                  alt="Rectangle132383"
+                  class="main-rectangle13"
+                />
+                <img
+                  src="public/external/rectangle122272-n9nk-300w.png"
+                  alt="Rectangle122272"
+                  class="main-rectangle12"
+                />
+                <img
+                  src="public/external/portrait12158-qifi-600w.png"
+                  alt="portrait12158"
+                  class="main-portrait1"
+                />
+              </div>
+              <div class="main-text079">
+                <span class="main-text080">
+                  <span>
+                    Thought years of experience, I have honed my skills in
+                    composition, lighting, and post-production to produce
+                    stunning visuals that showcase the beauty of my subjects.
+                    Whether it's a portrait, landscape, or event, I approach
+                    each project with passion and dedication, striving to
+                    deliver images that exceed my clients' expectations.
+                  </span>
+                </span>
+              </div>
+              <div class="main-btn3">
+                <img
+                  src="public/external/rightarrow1122260-yt2-200h.png"
+                  alt="rightarrow1122260"
+                  class="main-rightarrow112"
+                />
+                <span class="main-text082"><span>See All Portfolio</span></span>
+              </div>
+              <img
+                src="public/external/line32261-4jck.svg"
+                alt="Line32261"
+                class="main-line3"
+              />
+            </div>
+          </div>
+          <div class="main-secondsection">
+            <div class="main-background6"></div>
+            <img
+              src="public/external/rectangle92138-fcw-200w.png"
+              alt="Rectangle92138"
+              class="main-rectangle9"
+            />
+            <div class="main-content5">
+              <div class="main-image3">
+                <img
+                  src="public/external/blackwhiteminimalportrait112152-mqsb-400h.png"
+                  alt="blackwhiteminimalportrait112152"
+                  class="main-blackwhiteminimalportrait11"
+                />
+                <img
+                  src="public/external/blackwhiteminimalportrait212153-uwzo-700h.png"
+                  alt="blackwhiteminimalportrait212153"
+                  class="main-blackwhiteminimalportrait21"
+                />
+              </div>
+              <div class="main-text084">
+                <span class="main-text085"><span>Photographer</span></span>
+                <span class="main-text087"><span>Monica Johnson</span></span>
+                <span class="main-text089">
+                  <span>
+                    “As a professional photographer, I aim to capture the
+                    essence and beauty of the world around me through the lens
+                    of my camera. With a keen eye for detail, I am able to
+                    create stunning images that showcase the unique stories and
+                    personalities of my clients.”
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="main-firstsection">
+            <div class="main-background7">
+              <img
+                src="public/external/rectangle21218-ckx-1100h.png"
+                alt="Rectangle21218"
+                class="main-rectangle2"
+              />
+              <img
+                src="public/external/blackwhiteminimalportrait11219-xmh6-1000h.png"
+                alt="blackwhiteminimalportrait11219"
+                class="main-blackwhiteminimalportrait1"
+              />
+            </div>
+            <div class="main-text091">
+              <div class="main-title5">
+                <span class="main-text092"><span>Monica Johnson</span></span>
+              </div>
+              <div class="main-subtitle">
+                <span class="main-text094">
+                  <span>
+                    Our photography services feature highly skilled
+                    professionals and the attraction of top talent for each
+                    shoot. We excel at solving creative and organizational
+                    challenges, regardless of the level of complexity involved.
+                  </span>
+                </span>
+              </div>
+              <div class="main-btn4">
+                <span class="main-text096"><span>Read More</span></span>
+                <img
+                  src="public/external/rightarrow111204-x7bq-200h.png"
+                  alt="rightarrow111204"
+                  class="main-rightarrow111"
+                />
+              </div>
+            </div>
+            <div class="main-nav">
+              <img
+                src="public/external/hamburger11230-78tr-200h.png"
+                alt="hamburger11230"
+                class="main-hamburger1"
+              />
+              <span class="main-text098"><span>Portfolio</span></span>
+              <span class="main-text100"><span>Service &amp; Price</span></span>
+              <span class="main-text102"><span>Info</span></span>
+              <span class="main-text104"><span>Contact</span></span>
+            </div>
+            <div class="main-social1">
+              <div class="main-group2">
+                <img
+                  src="public/external/line11231-z1ei.svg"
+                  alt="Line11231"
+                  class="main-line1"
+                />
+                <img
+                  src="public/external/line21232-3pk.svg"
+                  alt="Line21232"
+                  class="main-line2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
